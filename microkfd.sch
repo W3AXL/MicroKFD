@@ -19,7 +19,7 @@ U 1 1 61AE902F
 P 2200 3300
 F 0 "J1" H 2257 3767 50  0000 C CNN
 F 1 "USB_B_Micro" H 2257 3676 50  0000 C CNN
-F 2 "Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal" H 2350 3250 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521_CircularHoles" H 2350 3250 50  0001 C CNN
 F 3 "~" H 2350 3250 50  0001 C CNN
 	1    2200 3300
 	1    0    0    -1  
@@ -467,7 +467,7 @@ F 3 "~" H 3200 2100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3000 2300 3200 2300
+	3000 2300 3050 2300
 Wire Wire Line
 	3200 2200 3200 2300
 Connection ~ 3200 2300
@@ -1113,12 +1113,8 @@ Text GLabel 7700 3300 0    50   Input ~ 0
 LED_SNS
 Text GLabel 7700 3800 0    50   Input ~ 0
 LED_ACT
-NoConn ~ 4600 2300
-NoConn ~ 4600 2400
-NoConn ~ 4600 2600
 NoConn ~ 4600 2800
 NoConn ~ 4600 2900
-NoConn ~ 4600 3000
 NoConn ~ 4600 3300
 NoConn ~ 4600 3700
 NoConn ~ 4600 3800
@@ -1132,7 +1128,127 @@ Text GLabel 4600 4200 2    50   Output ~ 0
 LED_SNS
 Text GLabel 4600 4500 2    50   Output ~ 0
 LED_ACT
-Text GLabel 4600 2500 2    50   Output ~ 0
+Text GLabel 4600 3000 2    50   Output ~ 0
 LED_PWR
 NoConn ~ 4600 2700
+$Comp
+L power:GND #PWR0101
+U 1 1 61B66CD6
+P 2700 5450
+F 0 "#PWR0101" H 2700 5200 50  0001 C CNN
+F 1 "GND" H 2705 5277 50  0001 C CNN
+F 2 "" H 2700 5450 50  0001 C CNN
+F 3 "" H 2700 5450 50  0001 C CNN
+	1    2700 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 61B6907E
+P 2700 4950
+F 0 "#PWR0102" H 2700 4800 50  0001 C CNN
+F 1 "+5V" H 2715 5123 50  0000 C CNN
+F 2 "" H 2700 4950 50  0001 C CNN
+F 3 "" H 2700 4950 50  0001 C CNN
+	1    2700 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3050 2200 1    50   Input ~ 0
+RST
+Wire Wire Line
+	3050 2200 3050 2300
+Connection ~ 3050 2300
+Wire Wire Line
+	3050 2300 3200 2300
+Text GLabel 2700 5350 2    50   Output ~ 0
+RST
+Text GLabel 2700 5050 2    50   Input ~ 0
+MISO
+Text GLabel 2700 5150 2    50   Output ~ 0
+MOSI
+Text GLabel 2700 5250 2    50   BiDi ~ 0
+SCK
+Text GLabel 4600 2600 2    50   Input ~ 0
+MISO
+Text GLabel 4600 2500 2    50   Output ~ 0
+MOSI
+Text GLabel 4600 2400 2    50   BiDi ~ 0
+SCK
+$Comp
+L Connector:TestPoint TP5
+U 1 1 61B9CB6E
+P 2700 4950
+F 0 "TP5" V 2750 5200 50  0000 C CNN
+F 1 "VCC" V 2650 5200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2900 4950 50  0001 C CNN
+F 3 "~" H 2900 4950 50  0001 C CNN
+	1    2700 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 61B9E0AB
+P 2700 5450
+F 0 "TP6" V 2750 5700 50  0000 C CNN
+F 1 "GND" V 2650 5700 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2900 5450 50  0001 C CNN
+F 3 "~" H 2900 5450 50  0001 C CNN
+	1    2700 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61BA0635
+P 2200 5050
+F 0 "TP3" V 2250 5300 50  0000 C CNN
+F 1 "MISO" V 2150 5300 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2400 5050 50  0001 C CNN
+F 3 "~" H 2400 5050 50  0001 C CNN
+	1    2200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61BA0F38
+P 2000 5150
+F 0 "TP1" V 2050 5400 50  0000 C CNN
+F 1 "MOSI" V 1950 5400 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2200 5150 50  0001 C CNN
+F 3 "~" H 2200 5150 50  0001 C CNN
+	1    2000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61BA1347
+P 2000 5250
+F 0 "TP2" V 2050 5500 50  0000 C CNN
+F 1 "SCK" V 1950 5500 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2200 5250 50  0001 C CNN
+F 3 "~" H 2200 5250 50  0001 C CNN
+	1    2000 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 61BA1C20
+P 2200 5350
+F 0 "TP4" V 2250 5600 50  0000 C CNN
+F 1 "RST" V 2150 5600 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2400 5350 50  0001 C CNN
+F 3 "~" H 2400 5350 50  0001 C CNN
+	1    2200 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 5350 2700 5350
+Wire Wire Line
+	2700 5250 2000 5250
+Wire Wire Line
+	2000 5150 2700 5150
+Wire Wire Line
+	2700 5050 2200 5050
+Text Notes 2350 5700 0    50   ~ 0
+ISP pads on bottom
+NoConn ~ 4600 2300
 $EndSCHEMATC
