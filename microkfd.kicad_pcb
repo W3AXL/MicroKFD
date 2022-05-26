@@ -2696,7 +2696,7 @@
   (gr_text "MicroKFD\n" (at 135.25 93.75) (layer "B.SilkS") (tstamp fa20e708-ec85-4e0b-8402-f74a2724f920)
     (effects (font (size 2 2) (thickness 0.25)) (justify left mirror))
   )
-  (gr_text "rev C 2022-01-19" (at 134.75 95.75) (layer "B.SilkS") (tstamp fb35e3b1-aff6-41a7-9cf0-52694b95edeb)
+  (gr_text "rev D 2022-04-09" (at 134.75 95.75) (layer "B.SilkS") (tstamp fb35e3b1-aff6-41a7-9cf0-52694b95edeb)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (dimension (type aligned) (layer "Dwgs.User") (tstamp 1cc5480b-56b7-4379-98e2-ccafc88911a7)
