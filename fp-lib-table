@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "lcsc-comps")(type "KiCad")(uri "${KIPRJMOD}/lcsc-comps.pretty")(options "")(descr ""))
+)
