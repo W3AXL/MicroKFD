@@ -1,4 +1,4 @@
-Designator,Val,Package,Mix X ,Mid Y,Rotation,Layer
+Designator,Val,Package,Mid X ,Mid Y,Rotation,Layer
 C1,0.1uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,107.5,-92.75,90,top
 C2,10uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,103,-92.75,90,top
 C3,0.1uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,110.2875,-106,0,top
