@@ -397,7 +397,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "microkfd.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
