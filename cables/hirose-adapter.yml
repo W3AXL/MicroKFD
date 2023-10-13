@@ -1,0 +1,25 @@
+connectors:
+  P1:
+    pincount: 3
+    pinlabels: [Tip, Ring, Sleeve]
+    type: 3.5mm TRS Male
+  P2:
+    pincount: 6
+    type: HR10A-7P-6P(73)
+  
+cables:
+  W1:
+    wirecount: 3
+    length: 1
+    shield: true
+    gauge: 0.25 mm2
+    colors: [GN, YE, BK]
+
+connections:
+  - 
+    - P1: 3
+    - W1: s
+  -
+    - P1: [1-3]
+    - W1: [1-3]
+    - P2: [2-4]

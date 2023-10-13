@@ -5,11 +5,11 @@
   (paper "USLetter")
 
   (title_block
-    (title "MicroKFD")
-    (date "2023-01-18")
-    (rev "E")
+    (title "KFDMicro")
+    (date "2023-10-13")
+    (rev "A.1")
     (company "W3AXL")
-    (comment 1 "redesigned to use 328P MCU")
+    (comment 1 "updated to new USB C connector")
   )
 
   (lib_symbols
@@ -3406,13 +3406,13 @@
     (uuid fabf7749-ebd0-466d-b1d1-b47115541cf1)
     (property "Reference" "J1" (id 0) (at 45.72 143.51 0))
     (property "Value" "USB_C_Receptacle_USB2.0" (id 1) (at 45.72 146.05 0))
-    (property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" (id 2) (at 49.53 166.37 0)
+    (property "Footprint" "lcsc-comps:TYPE-611S-T3" (id 2) (at 49.53 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (id 3) (at 49.53 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C165948" (id 4) (at 45.72 166.37 0)
+    (property "LCSC" "C2874595" (id 4) (at 45.72 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "A1" (uuid dd66874c-943e-4aef-adc6-2806c63aba9f))
@@ -3584,7 +3584,7 @@
       (reference "D5") (unit 1) (value "6.3V") (footprint "Diode_SMD:D_SOD-323_HandSoldering")
     )
     (path "/fabf7749-ebd0-466d-b1d1-b47115541cf1"
-      (reference "J1") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12")
+      (reference "J1") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "lcsc-comps:TYPE-611S-T3")
     )
     (path "/f52ac8d2-9aff-4317-9ba9-5b1cbe8ec425"
       (reference "J2") (unit 1) (value "AVR-ISP-6") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
