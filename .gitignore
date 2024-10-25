@@ -28,3 +28,4 @@ fp-info-cache
 # Kicad Backups
 microkfd-backups/
 *.zip
+/jlcpcb
