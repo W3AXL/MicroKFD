@@ -537,7 +537,7 @@
       "plot": "gerb/revB",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "microkfd.step",
+      "step": "microkfd-revB.step",
       "svg": "",
       "vrml": ""
     },

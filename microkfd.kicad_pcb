@@ -7246,15 +7246,15 @@
 			(uuid "004da1b4-9bcf-42d6-9a87-2592fb977b78")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal.wrl"
+		(model "${KIPRJMOD}/PJ320D.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz -1.15 -0.25 -11.75)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
